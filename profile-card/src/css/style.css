@@ -19,7 +19,7 @@ body {
 }
 .container {
 	max-width: 1400px;
-	min-height: 70vh;
+	min-height: 100vh;
 	margin: 0 auto;
 	position: relative;
 }
@@ -103,9 +103,7 @@ span {
 }
 
 @media screen and (max-width: 520px) {
-	.container {
-		min-height: 60vh;
-	}
+	
 	.profile-card__wrapper {
 		width: 326px;
 	}
