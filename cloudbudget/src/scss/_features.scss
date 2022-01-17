@@ -1,0 +1,56 @@
+.features {
+	background-color: $gray_bg-color;
+	padding: 63px 0 125px 0;
+	&__title {
+		text-align: center;
+		padding-bottom: 70px;
+	}
+	&__inner {
+		display: flex;
+		justify-content: center;
+
+		&-image {
+			position: relative;
+			max-width: 350px;
+			height: 250px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 8px;
+			flex-basis: 33%;
+			&:not(:last-child) {
+				margin-right: 30px;
+			}
+			&--first {
+				background-image: url("../../assets/images/future_01.jpg");
+			}
+			&--second {
+				background-image: url("../../assets/images/future_02.jpg");
+			}
+			&--third {
+				background-image: url("../../assets/images/future_03.jpg");
+			}
+		}
+		&-front {
+			width: 293px;
+			height: 198px;
+			background-color: $white_txt-color;
+			position: absolute;
+			top: 103%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 8px;
+			padding: 33px 0 25px 0;
+		}
+		&-items {
+			max-width: 229px;
+			margin: 0 auto;
+			color: $footer_txt-color;
+			font-size: 0.88rem;
+			text-align: center;
+		}
+		&-descr {
+			text-align: center;
+			padding: 20px 0 22px 0;
+		}
+	}
+}

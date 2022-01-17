@@ -31,7 +31,7 @@ a {
 }
 
 .container {
-  max-width: 1107px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -43,6 +43,19 @@ h1 {
   font-size: 5.14rem;
   line-height: 120%;
   letter-spacing: 5px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.57rem;
+  line-height: 120%;
+  color: #000000;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.29rem;
+  text-align: center;
 }
 
 .button {
@@ -66,6 +79,31 @@ h1 {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info {
+  max-width: 445px;
+  text-align: left;
+}
+
+.link__more {
+  color: #ed4c5c;
+}
+
+.link__more:hover {
+  font-weight: 700;
 }
 
 .top-background {
@@ -209,4 +247,100 @@ h1 {
   margin-top: 58px;
   color: #ed4c5c;
   background-color: #ffffff;
+}
+
+.management {
+  padding: 94px 0 95px 0;
+}
+
+.management__info {
+  padding-top: 30px;
+  margin-right: 125px;
+}
+
+.management__info, .management__image {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: 40%;
+          flex-direction: 40%;
+}
+
+.management__title {
+  color: #000000;
+}
+
+.management__text {
+  margin: 45px 0 20px 0;
+}
+
+.features {
+  background-color: #fafafa;
+  padding: 63px 0 125px 0;
+}
+
+.features__title {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.features__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.features__inner-image {
+  position: relative;
+  max-width: 350px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.features__inner-image:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__inner-image--first {
+  background-image: url("../../assets/images/future_01.jpg");
+}
+
+.features__inner-image--second {
+  background-image: url("../../assets/images/future_02.jpg");
+}
+
+.features__inner-image--third {
+  background-image: url("../../assets/images/future_03.jpg");
+}
+
+.features__inner-front {
+  width: 293px;
+  height: 198px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 103%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 8px;
+  padding: 33px 0 25px 0;
+}
+
+.features__inner-items {
+  max-width: 229px;
+  margin: 0 auto;
+  color: #121212;
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.features__inner-descr {
+  text-align: center;
+  padding: 20px 0 22px 0;
 }

@@ -26,7 +26,7 @@ a {
 	color: $white_txt-color;
 }
 .container {
-	max-width: 1107px;
+	max-width: 1110px;
 	margin: 0 auto;
 	// min-height: 100vh;
 }
@@ -38,6 +38,17 @@ h1 {
 	font-size: 5.14rem;
 	line-height: 120%;
 	letter-spacing: 5px;
+}
+h2 {
+	font-weight: 600;
+	font-size: 2.57rem;
+	line-height: 120%;
+	color: $black_txt-color;
+}
+h3 {
+	font-weight: 600;
+	font-size: 1.29rem;
+	text-align: center;
 }
 .button {
 	display: block;
@@ -54,5 +65,20 @@ h1 {
 	&:hover {
 		cursor: pointer;
 		transform: scale(1.1);
+	}
+}
+.wrapper {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.info {
+	max-width: 445px;
+	text-align: left;
+}
+.link__more {
+	color: $primary_color;
+	&:hover {
+		font-weight: 700;
 	}
 }

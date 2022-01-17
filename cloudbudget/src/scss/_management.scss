@@ -1,0 +1,17 @@
+.management {
+	padding: 94px 0 95px 0;
+	&__info {
+		padding-top: 30px;
+		margin-right: 125px;
+	}
+	&__info,
+	&__image {
+		flex-direction: 40%;
+	}
+	&__title {
+		color: $black_txt-color;
+	}
+	&__text {
+		margin: 45px 0 20px 0;
+	}
+}
