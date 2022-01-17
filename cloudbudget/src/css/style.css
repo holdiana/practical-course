@@ -35,6 +35,39 @@ a {
   margin: 0 auto;
 }
 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 5.14rem;
+  line-height: 120%;
+  letter-spacing: 5px;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  max-width: 160px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-weight: 600;
+  padding: 17px 53px 16px 52px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .top-background {
   padding-top: 17px;
   width: 100%;
@@ -156,4 +189,24 @@ a {
 
 .header__button-login {
   line-height: 120%;
+}
+
+.hero {
+  padding: 125px 0 187px 0;
+  color: #ffffff;
+}
+
+.hero__description {
+  max-width: 500px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.71rem;
+  line-height: 150%;
+  margin: 39px auto;
+}
+
+.hero__btn {
+  margin-top: 58px;
+  color: #ed4c5c;
+  background-color: #ffffff;
 }

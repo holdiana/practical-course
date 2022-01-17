@@ -30,3 +30,29 @@ a {
 	margin: 0 auto;
 	// min-height: 100vh;
 }
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: $white_txt-color;
+	font-weight: 700;
+	font-size: 5.14rem;
+	line-height: 120%;
+	letter-spacing: 5px;
+}
+.button {
+	display: block;
+	margin: 0 auto;
+	max-width: 160px;
+	border-radius: 6px;
+	text-transform: uppercase;
+	border: none;
+	align-items: center;
+	text-align: center;
+	font-weight: 600;
+	padding: 17px 53px 16px 52px;
+	transition: all 0.3s;
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.1);
+	}
+}
