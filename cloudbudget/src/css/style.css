@@ -275,7 +275,7 @@ h3 {
 
 .features {
   background-color: #fafafa;
-  padding: 63px 0 125px 0;
+  padding: 63px 0 229px 0;
 }
 
 .features__title {
@@ -343,4 +343,96 @@ h3 {
 .features__inner-descr {
   text-align: center;
   padding: 20px 0 22px 0;
+}
+
+.technology {
+  padding-bottom: 125px;
+}
+
+.technology__title {
+  text-align: center;
+  padding: 63px 0 110px 0;
+}
+
+.technology__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.technology__inner-number {
+  max-width: 196px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 7.14rem;
+  color: #10101014;
+}
+
+.technology__inner-number:not(:last-child) {
+  margin-right: 96px;
+}
+
+.technology__inner-icon--cloud {
+  margin-top: -10px;
+}
+
+.technology__inner-title {
+  color: #101010;
+}
+
+.technology__inner-title:not(:first-child) {
+  padding: 15px 0 8px 0;
+}
+
+.technology__inner-descr {
+  max-width: 195px;
+  text-align: center;
+  font-size: 0.86rem;
+  line-height: 120%;
+  color: #000000;
+}
+
+.focus {
+  padding: 94px 0 95px 0;
+  background-color: #ed4c5c;
+  color: #ffffff;
+}
+
+.focus__title {
+  color: #ffffff;
+  padding: 20px 0 50px 0;
+}
+
+.focus__info, .focus__image {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: 40%;
+          flex-direction: 40%;
+}
+
+.focus__download {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 134px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.focus__image {
+  width: 445px;
+  height: 311px;
+  background-image: url("../../assets/images/Video_bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  margin-left: 125px;
 }

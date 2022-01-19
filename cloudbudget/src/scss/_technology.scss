@@ -1,0 +1,43 @@
+.technology {
+	padding-bottom: 125px;
+	&__title {
+		text-align: center;
+		padding: 63px 0 110px 0;
+	}
+	&__inner {
+		display: flex;
+		justify-content: center;
+		// align-items: center;
+		&-front {
+		}
+		&-number {
+			max-width: 196px;
+			text-align: center;
+			font-weight: 700;
+			font-size: 7.14rem;
+			color: #10101014;
+			&:not(:last-child) {
+				margin-right: 96px;
+			}
+		}
+		&-icon {
+			&--cloud {
+				margin-top: -10px;
+			}
+		}
+		&-title {
+			color: $descr_color;
+
+			&:not(:first-child) {
+				padding: 15px 0 8px 0;
+			}
+		}
+		&-descr {
+			max-width: 195px;
+			text-align: center;
+			font-size: 0.86rem;
+			line-height: 120%;
+			color: $black_txt-color;
+		}
+	}
+}

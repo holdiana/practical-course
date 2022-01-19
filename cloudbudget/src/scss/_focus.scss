@@ -1,0 +1,32 @@
+.focus {
+	padding: 94px 0 95px 0;
+	background-color: $primary_color;
+	color: $white_txt-color;
+	&__title {
+		color: $white_txt-color;
+		padding: 20px 0 50px 0;
+	}
+	&__info,
+	&__image {
+		flex-direction: 40%;
+	}
+	&__info {
+	}
+	&__download {
+		margin-top: 50px;
+		// padding-top: 40px;
+		display: flex;
+		max-width: 134px;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__image {
+		width: 445px;
+		height: 311px;
+		background-image: url("../../assets/images/Video_bg2.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 15px;
+		margin-left: 125px;
+	}
+}
