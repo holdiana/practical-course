@@ -13,6 +13,7 @@ body {
 
 html {
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -435,4 +436,169 @@ h3 {
   background-size: cover;
   border-radius: 15px;
   margin-left: 125px;
+}
+
+.contactform {
+  padding: 117px 0 128px 18px;
+}
+
+.contactform__wrapper {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.contactform__info {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  margin-right: 115px;
+}
+
+.contactform__inner {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+
+.contactform__title {
+  padding-bottom: 50px;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin: 0;
+}
+
+.contactform__text {
+  max-width: 434px;
+}
+
+.contactform input {
+  width: 100%;
+  font-size: 16px;
+  line-height: 120%;
+  margin-bottom: 22px;
+  padding: 21px 0px 20px 31px;
+  border-radius: 6px;
+  border: 1px solid #333333;
+}
+
+.contactform input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+.contactform input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+.contactform input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
+}
+
+.contactform input:focus {
+  outline: 1px solid #ed4c5c;
+  border: none;
+}
+
+.contactform input p {
+  max-width: 540px;
+}
+
+.contactform input[name="firstName"],
+.contactform input[name="lastName"] {
+  width: 255px;
+}
+
+.contactform input[name="firstName"] {
+  margin-right: 30px;
+}
+
+.contactform .form__btn {
+  background-color: #ed4c5c;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 17px 34px 16px 34px;
+  margin: 0;
+}
+
+.contactform .form__error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  display: none;
+  margin-top: -5px;
+}
+
+.footer {
+  padding: 85px 0 0 0;
+  background-color: #fafafa;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-bottom: 98px;
+}
+
+.footer__column {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.footer__column:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__column-title {
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.footer__column-address {
+  max-width: 180px;
+}
+
+.footer__column-email a {
+  color: #101010;
+}
+
+.footer__column-phone {
+  padding: 9px 0 15px 0;
+}
+
+.footer__column-phone a {
+  color: #121212;
+}
+
+.footer__column-social img {
+  margin-right: 12px;
+}
+
+.footer__column-list a {
+  color: #000000;
+  line-height: 120%;
+  font-size: 0.88rem;
+  text-transform: capitalize;
+}
+
+.footer__column-image {
+  max-width: 216px;
+}
+
+.footer__column-image img {
+  width: 100%;
+}
+
+.footer__copyright {
+  padding-bottom: 86px;
+  font-size: 0.88rem;
 }

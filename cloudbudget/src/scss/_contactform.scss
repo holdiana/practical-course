@@ -1,0 +1,70 @@
+.contactform {
+	padding: 117px 0 128px 18px;
+	&__wrapper {
+		justify-content: left;
+		align-items: baseline;
+	}
+	&__info {
+		flex-basis: 40%;
+		margin-right: 115px;
+	}
+	&__inner {
+		flex-basis: 49%;
+	}
+	&__title {
+		padding-bottom: 50px;
+		align-items: left;
+		margin: 0;
+	}
+	&__text {
+		max-width: 434px;
+	}
+	& input {
+		width: 100%;
+		font-size: 16px;
+		line-height: 120%;
+		margin-bottom: 22px;
+		padding: 21px 0px 20px 31px;
+		border-radius: 6px;
+		border: 1px solid #333333;
+		&:valid:not(:placeholder-shown) {
+			border-color: green;
+		}
+		&:invalid:not(:placeholder-shown) {
+			border-color: red;
+		}
+		&:invalid:not(:placeholder-shown) + .form__error {
+			display: block;
+		}
+		&:focus {
+			outline: 1px solid $primary_color;
+			border: none;
+		}
+
+		& p {
+			max-width: 540px;
+		}
+	}
+	& input[name="firstName"],
+	input[name="lastName"] {
+		width: 255px;
+	}
+	& input[name="firstName"] {
+		margin-right: 30px;
+	}
+	& .form__btn {
+		background-color: $primary_color;
+		color: $white_txt-color;
+		text-transform: uppercase;
+		padding: 17px 34px 16px 34px;
+		margin: 0;
+	}
+	& .form__error {
+		color: red;
+		text-align: left;
+		font-size: 12px;
+		display: block;
+		display: none;
+		margin-top: -5px;
+	}
+}
