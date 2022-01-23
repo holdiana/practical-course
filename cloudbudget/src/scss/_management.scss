@@ -1,0 +1,48 @@
+.management {
+	padding: 94px 0 95px 0;
+	@include laptop-l {
+		padding: 84px 0 85px 0;
+	}
+	@include media-tablet {
+		padding: 54px 0 55px 0;
+	}
+	@include sm-tablet {
+		padding: 35px 0;
+	}
+	&__info {
+		padding-top: 30px;
+		margin-right: 125px;
+		@include laptop-l {
+			margin-right: 50px;
+		}
+		@include media-tablet {
+			padding-bottom: 30px;
+			margin-right: 0;
+		}
+	}
+	&__info,
+	&__image {
+		flex-direction: 40%;
+		@include laptop-l {
+			flex-direction: 30%;
+		}
+	}
+	&__title {
+		color: $black_txt-color;
+	}
+	&__text {
+		margin: 45px 0 20px 0;
+		@include sm-tablet {
+			margin: 25px 0 15px 0;
+		}
+	}
+	&__image {
+		& img {
+			@include sm-tablet {
+				margin: 0 auto;
+				display: block;
+				width: 90%;
+			}
+		}
+	}
+}
