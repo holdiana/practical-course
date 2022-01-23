@@ -1,6 +1,9 @@
 .hero {
 	padding: 125px 0 187px 0;
 	color: $white_txt-color;
+	@include sm-tablet {
+		padding: 85px 0 137px 0;
+	}
 	&__description {
 		max-width: 500px;
 		font-weight: 600;

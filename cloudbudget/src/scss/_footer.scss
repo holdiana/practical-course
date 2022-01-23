@@ -1,23 +1,51 @@
 .footer {
 	padding: 85px 0 0 0;
 	background-color: $gray_bg-color;
+	@include sm-tablet {
+		padding: 50px 0 0 0;
+	}
 	&__wrapper {
 		display: flex;
 		justify-content: center;
 		align-items: baseline;
 		padding-bottom: 98px;
+		@include media-tablet {
+			flex-wrap: wrap;
+			margin: 0px auto;
+		}
 	}
 	&__column {
 		flex-basis: 25%;
+		@include media-tablet {
+			flex-basis: 50%;
+		}
+		@include sm-tablet {
+			margin: 10px auto;
+		}
+		@include media-mobile-small {
+			flex-basis: 100%;
+			text-align: center;
+		}
 		&:not(:last-child) {
 			margin-right: 30px;
+			@include media-tablet {
+				margin-right: 0;
+			}
 		}
 		&-title {
 			padding-bottom: 30px;
 			text-align: left;
+			@include media-mobile-small {
+				padding-bottom: 10px;
+				text-align: center;
+			}
 		}
 		&-address {
 			max-width: 180px;
+			@include media-mobile-small {
+				max-width: 280px;
+				order: 2;
+			}
 		}
 		&-email {
 			& a {
@@ -53,5 +81,9 @@
 	&__copyright {
 		padding-bottom: 86px;
 		font-size: 0.88rem;
+		@include sm-tablet {
+			padding-bottom: 26px;
+			text-align: center;
+		}
 	}
 }

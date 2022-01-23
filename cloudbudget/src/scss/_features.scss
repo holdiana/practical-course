@@ -1,13 +1,22 @@
 .features {
 	background-color: $gray_bg-color;
 	padding: 63px 0 229px 0;
+	@include sm-tablet {
+		padding: 43px 0 79px 0;
+	}
 	&__title {
 		text-align: center;
 		padding-bottom: 70px;
+		@include sm-tablet {
+			padding-bottom: 30px;
+		}
 	}
 	&__inner {
 		display: flex;
 		justify-content: center;
+		@include media-tablet {
+			flex-wrap: wrap;
+		}
 
 		&-image {
 			position: relative;
@@ -17,8 +26,20 @@
 			background-size: cover;
 			border-radius: 8px;
 			flex-basis: 33%;
+			@include media-tablet {
+				flex-basis: 45%;
+			}
+			@include sm-tablet {
+				flex-basis: 100%;
+			}
 			&:not(:last-child) {
 				margin-right: 30px;
+				@include media-laptop {
+					margin-right: 15px;
+				}
+				@include media-tablet {
+					margin-bottom: 150px;
+				}
 			}
 			&--first {
 				background-image: url("../../assets/images/future_01.jpg");
@@ -40,6 +61,12 @@
 			transform: translate(-50%, -50%);
 			border-radius: 8px;
 			padding: 33px 0 25px 0;
+			@include media-tablet {
+				width: 245px;
+			}
+			@include sm-tablet {
+				width: 270px;
+			}
 		}
 		&-items {
 			max-width: 229px;

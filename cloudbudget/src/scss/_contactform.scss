@@ -1,12 +1,29 @@
 .contactform {
 	padding: 117px 0 128px 18px;
+	@include media-tablet {
+		padding: 87px 0 98px 10px;
+	}
+	@include sm-tablet {
+		padding: 57px 0 68px 10px;
+	}
 	&__wrapper {
 		justify-content: left;
 		align-items: baseline;
+		@include media-tablet {
+			justify-content: center;
+		}
 	}
 	&__info {
 		flex-basis: 40%;
 		margin-right: 115px;
+		@include media-laptop {
+			margin-right: 50px;
+		}
+		@include media-tablet {
+			margin-right: 0px;
+			flex-basis: 100%;
+			padding-bottom: 30px;
+		}
 	}
 	&__inner {
 		flex-basis: 49%;
@@ -15,6 +32,9 @@
 		padding-bottom: 50px;
 		align-items: left;
 		margin: 0;
+		@include sm-tablet {
+			padding-bottom: 30px;
+		}
 	}
 	&__text {
 		max-width: 434px;
@@ -27,6 +47,10 @@
 		padding: 21px 0px 20px 31px;
 		border-radius: 6px;
 		border: 1px solid #333333;
+		@include sm-tablet {
+			padding: 16px 0px 15px 21px;
+			margin-bottom: 17px;
+		}
 		&:valid:not(:placeholder-shown) {
 			border-color: green;
 		}
@@ -43,14 +67,38 @@
 
 		& p {
 			max-width: 540px;
+			@include sm-tablet {
+				max-width: 400px;
+			}
+			@include media-mobile {
+				max-width: 350px;
+			}
+			@include media-mobile-small {
+				max-width: 290px;
+			}
 		}
 	}
 	& input[name="firstName"],
 	input[name="lastName"] {
 		width: 255px;
+		@include laptop-l {
+			width: 540px;
+		}
+		@include sm-tablet {
+			max-width: 400px;
+		}
+		@include media-mobile {
+			max-width: 350px;
+		}
+		@include media-mobile-small {
+			max-width: 290px;
+		}
 	}
 	& input[name="firstName"] {
 		margin-right: 30px;
+		@include laptop-l {
+			margin-right: 0px;
+		}
 	}
 	& .form__btn {
 		background-color: $primary_color;
@@ -58,6 +106,9 @@
 		text-transform: uppercase;
 		padding: 17px 34px 16px 34px;
 		margin: 0;
+		@include media-tablet {
+			margin: 0 auto;
+		}
 	}
 	& .form__error {
 		color: red;

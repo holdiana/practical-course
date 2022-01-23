@@ -1,23 +1,41 @@
 .technology {
 	padding-bottom: 125px;
+	@include sm-tablet {
+		padding-bottom: 70px;
+	}
 	&__title {
 		text-align: center;
 		padding: 63px 0 110px 0;
+		@include sm-tablet {
+			padding: 33px 0 60px 0;
+		}
 	}
 	&__inner {
 		display: flex;
 		justify-content: center;
-		// align-items: center;
-		&-front {
+
+		@include media-tablet {
+			flex-wrap: wrap;
 		}
+
 		&-number {
 			max-width: 196px;
 			text-align: center;
 			font-weight: 700;
 			font-size: 7.14rem;
 			color: #10101014;
+			@include media-tablet {
+				padding-bottom: 50px;
+			}
+			@include sm-tablet {
+				margin: 0 15px;
+				flex-basis: 100%;
+			}
 			&:not(:last-child) {
 				margin-right: 96px;
+				@include media-tablet {
+					margin-right: 0px;
+				}
 			}
 		}
 		&-icon {

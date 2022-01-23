@@ -18,6 +18,7 @@ body {
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
 	line-height: 140%;
+	overflow-x: hidden;
 }
 ul {
 	list-style-type: none;
@@ -30,6 +31,9 @@ a {
 	max-width: 1110px;
 	margin: 0 auto;
 	// min-height: 100vh;
+	@include laptop-l {
+		padding: 0 10px;
+	}
 }
 h1 {
 	text-align: center;
@@ -39,12 +43,24 @@ h1 {
 	font-size: 5.14rem;
 	line-height: 120%;
 	letter-spacing: 5px;
+	@include media-tablet {
+		font-size: 4rem;
+	}
+	@include sm-tablet {
+		font-size: 2.8rem;
+	}
+	@include media-mobile-small {
+		font-size: 2.2rem;
+	}
 }
 h2 {
 	font-weight: 600;
 	font-size: 2.57rem;
 	line-height: 120%;
 	color: $black_txt-color;
+	@include sm-tablet {
+		font-size: 2.2rem;
+	}
 }
 h3 {
 	font-weight: 600;
@@ -72,10 +88,18 @@ h3 {
 	display: flex;
 	justify-content: left;
 	align-items: center;
+	@include media-tablet {
+		// margin: 0 auto;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 .info {
 	max-width: 445px;
 	text-align: left;
+	@include media-tablet {
+		text-align: center;
+	}
 }
 .link__more {
 	color: $primary_color;
