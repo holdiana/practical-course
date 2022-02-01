@@ -78,10 +78,12 @@ h3 {
 	text-align: center;
 	font-weight: 600;
 	padding: 17px 53px 16px 52px;
-	transition: all 0.3s;
+	transition: all  ease 0.3s;
+	transform: scale(1);
 	&:hover {
 		cursor: pointer;
 		transform: scale(1.1);
+		box-sizing:border-box;
 	}
 }
 .wrapper {
@@ -103,7 +105,12 @@ h3 {
 }
 .link__more {
 	color: $primary_color;
+	transition: all  ease-in-out 0.5s;
+	display: inline-block;
 	&:hover {
+		// transform: scale(1.05);
 		font-weight: 700;
+		box-sizing:border-box;
+		
 	}
 }

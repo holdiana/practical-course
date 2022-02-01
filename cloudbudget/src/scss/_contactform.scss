@@ -47,6 +47,9 @@
 		padding: 21px 0px 20px 31px;
 		border-radius: 6px;
 		border: 1px solid #333333;
+		display: inline-block;
+		box-sizing: border-box;
+		
 		@include sm-tablet {
 			padding: 16px 0px 15px 21px;
 			margin-bottom: 17px;
@@ -61,11 +64,11 @@
 			display: block;
 		}
 		&:focus {
-			outline: 1px solid $primary_color;
-			border: none;
+			border: 1px solid #333333;
+			outline: none;
 		}
 
-		& p {
+		& .form__line {
 			max-width: 540px;
 			@include sm-tablet {
 				max-width: 400px;
@@ -85,10 +88,10 @@
 			width: 540px;
 		}
 		@include sm-tablet {
-			max-width: 400px;
+			max-width: 375px;
 		}
 		@include media-mobile {
-			max-width: 350px;
+			max-width: 320px;
 		}
 		@include media-mobile-small {
 			max-width: 290px;
