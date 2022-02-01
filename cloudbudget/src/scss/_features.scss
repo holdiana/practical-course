@@ -17,15 +17,10 @@
 		@include media-tablet {
 			flex-wrap: wrap;
 		}
-
-		&-image {
+		&-holder{
 			position: relative;
-			max-width: 350px;
-			height: 250px;
-			background-repeat: no-repeat;
-			background-size: cover;
-			border-radius: 8px;
 			flex-basis: 33%;
+			
 			@include media-tablet {
 				flex-basis: 45%;
 			}
@@ -39,8 +34,21 @@
 				}
 				@include media-tablet {
 					margin-bottom: 150px;
+					margin-right: 0px;
 				}
 			}
+		}
+		&-image {
+			max-width: 350px;
+			height: 250px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 8px;
+			@include sm-tablet {
+				margin: 0 auto;
+				
+			}
+			
 			&--first {
 				background-image: url("../../assets/images/future_01.jpg");
 			}
@@ -50,6 +58,7 @@
 			&--third {
 				background-image: url("../../assets/images/future_03.jpg");
 			}
+			
 		}
 		&-front {
 			width: 293px;
@@ -61,6 +70,8 @@
 			transform: translate(-50%, -50%);
 			border-radius: 8px;
 			padding: 33px 0 25px 0;
+			box-shadow: 0px 5px 30px 0px #0000001A;
+
 			@include media-tablet {
 				width: 245px;
 			}

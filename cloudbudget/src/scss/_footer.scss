@@ -42,38 +42,40 @@
 		}
 		&-address {
 			max-width: 180px;
+			font-size: 12px;
+			font-style: normal;
 			@include media-mobile-small {
 				max-width: 280px;
 				order: 2;
 			}
 		}
 		&-email {
-			& a {
+			&--link {
 				color: $descr_color;
 			}
 		}
 		&-phone {
 			padding: 9px 0 15px 0;
-			a {
+			&--link{
 				color: $footer_txt-color;
 			}
+			
 		}
 		&-social {
-			& img {
+			&--img {
 				margin-right: 12px;
 			}
 		}
-		&-list {
-			& a {
-				color: $black_txt-color;
-				line-height: 120%;
-				font-size: 0.88rem;
-				text-transform: capitalize;
-			}
+		&-link {
+			color: $black_txt-color;
+			line-height: 120%;
+			font-size: 0.88rem;
+			text-transform: capitalize;
 		}
+		
 		&-image {
 			max-width: 216px;
-			& img {
+			&--img {
 				width: 100%;
 			}
 		}

@@ -26,6 +26,13 @@
 		@include media-tablet {
 			margin: 30px 0;
 		}
+		&-link{
+			opacity: 1;
+			transition: all ease-in .3s;
+			&:hover{
+			opacity: 0.7;
+			}
+		}
 	}
 	&__image {
 		width: 445px;
