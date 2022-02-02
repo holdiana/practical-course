@@ -7,7 +7,7 @@
 		text-align: center;
 		padding: 63px 0 110px 0;
 		@include sm-tablet {
-			padding: 33px 0 60px 0;
+			padding: 93px 0 60px 0;
 		}
 	}
 	&__inner {
@@ -15,46 +15,57 @@
 		justify-content: center;
 		@include media-tablet {
 			flex-wrap: wrap;
+		}	
+	}
+	&__box{
+		max-width: 255px;
+		flex-basis: 25%;
+		text-align: center;
+		@include laptop-l {
+			flex-basis: 50%;
 		}
-		&-box{
-			max-width: 255px;
-			flex-basis: 25%;
-			text-align: center;
-			@include laptop-l {
-				flex-basis: 50%;
-			}
+		@include media-tablet {
+			padding-bottom: 50px;
+		}
+		@include sm-tablet {
+			margin: 0 15px;
+			flex-basis: 100%;
+		}
+		&:not(:last-child) {
+			margin-right: 30px;
 			@include media-tablet {
-				padding-bottom: 50px;
-			}
-			@include sm-tablet {
-				margin: 0 15px;
-				flex-basis: 100%;
-			}
-			&:not(:last-child) {
-				margin-right: 30px;
-				@include media-tablet {
-					margin-right: 0px;
-				}
+				margin-right: 0px;
 			}
 		}
-		&-number {
-			max-width: 117px;
-			text-align: center;
-			font-weight: 700;
-			font-size: 7.14rem;
-			color: #10101014;
-			margin: 0 auto;
-		}
-		&-items{
-			margin: 0 auto;
-			text-align: center;
-		}
-		&-icon {
+	}
+	&__number {
+		max-width: 117px;
+		text-align: center;
+		font-weight: 700;
+		font-size: 7.14rem;
+		color: #10101014;
+		margin: 0 auto;
+	}
+	&__icon {
 		padding: 0 0 14px 0;
-			&--cloud {
+			&-cloud {
 				margin-top: -10px;
 			}
-		}
+	}
+	&__items{
+			margin: 0 auto;
+			text-align: center;
+	}
+	&__descr {
+		max-width: 195px;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 0.86rem;
+		line-height: 120%;
+		color: $black_txt-color;
+		font-weight: 400;
+	}
+	&__item{
 		&-title {
 			color: $descr_color;
 			padding-bottom: 10px;
@@ -65,14 +76,5 @@
 				margin-top: -5px;
 			}
 		}
-		&-descr {
-			max-width: 195px;
-			margin: 0 auto;
-			text-align: center;
-			font-size: 0.86rem;
-			line-height: 120%;
-			color: $black_txt-color;
-			font-weight: 400;
-		}
-	}
+	}		
 }
