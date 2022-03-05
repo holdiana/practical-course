@@ -5,33 +5,294 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI Kit</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.webix.com/site/webix.css">
+    <link rel="stylesheet" href="./css/choices.min.css">
     <link rel="stylesheet" href="./css/style.css">
+   
+    
 </head>
 <body>
+  <script type="text/javascript" charset="utf-8"></script>
     <section class="forms">
         <div class="container">
-            <div class="forms__clumn">
+            <div class="forms__column">
                 <div class="forms__inputs">
-                    <form class="form__field" action="">
-                        <div class="form__title">Input Basic</div>
+                    <form class="forms__field" action="">
+                        <h2 class="forms__subtitle">Input Basic/Focused</h2>
                         <input type="text" required name="Basic" min="3" max="15" placeholder="Placeholder">
-                        <div class="form__title">Input Error</div>
-                        <input type="text" name="Errors" placeholder="Value" required min="3" max="15">
-                        <div class="form__title">Input Focused</div>
-                        <input type="text" required name="Focused" min="3" max="15" placeholder="Value">
-                        <div class="form__title">Input Disabled</div>
-                        <input type="text" required name="Disabled" min="3" max="15" placeholder="Value">
+                        <h2 class="forms__subtitle">Input Error</h2>
+                        <input type="text" name="Errors" placeholder="Value" required min="3" max="15" pattern="[a-z]{1,15}">
+                        <div class="forms__subtitle">Input Disabled</div>
+                        <input type="text" required name="Disabled" min="3" max="15" placeholder="Value" disabled>
+                        <h2 class="forms__subtitle">Please choose:</h2>
+                        <select name="choose" class="choose">
+                            <option value="Option" class="defoult">Option</option>
+                            <option value="Please choose"></option>
+                            <option value="Textarea"></option>
+                            <option value="Label"></option>
+                            <option value="Fieldset"></option>
+                            <option value="Legend"></option>
+                        </select>
                     </form>
                 </div>
-                <div class="forms__checkbox"></div>
-                <div class="forms__calendar"></div>
+                <div class="checkbox__wrapper">
+                    <div class="checkbox">
+                        <input type="checkbox" class="custom-checkbox" id="square" name="square" value="yes">
+                        <label class="option-name" for="square">Option</label>
+                    </div>
+                
+                    <div class="checkbox">
+                        <input class="custom-checkbox" type="checkbox" id="active" name="active" >
+                        <label for="active"></label>
+                      </div>
+                    <div class="checkbox">
+                        <input class="custom-checkbox" type="text" id="focus" name="focus" >
+                        <label for="focus"></label>
+                      </div>
+                    
+                      <div class="checkbox">
+                        <input class="custom-checkbox" type="checkbox" id="disabl" name="disabl" value="disabl" disabled="disabled">
+                        <label for="disabl"></label>
+                      </div>
+                </div>
+                <div class="radio__wrapper">
+                    <div class="radio">
+                        <label class="custom-radio">
+                          <input type="radio" name="options" value="option">
+                          <span class="radio-name">Option</span>
+                        </label>
+                      </div>
+                    
+                      <div class="radio">
+                        <label class="custom-radio">
+                          <input type="radio" name="options" value="basics">
+                          <span></span>
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label class="custom-radio">
+                          <input type="radio" name="options" value="focus">
+                          <span></span>
+                        </label>
+                      </div>
+                    
+                      <div class="radio">
+                        <label class="custom-radio">
+                          <input type="radio" name="color" value="brown" disabled="disabled">
+                          <span></span>
+                        </label>
+                      </div>
+                    
+                </div>
+                <div class="calendar">
+                    
+                </div>
 
             </div>
-            <div class="forms__clumn"></div>
-            <div class="forms__clumn"></div>
+            <div class="forms__column">
+                <div class="forms__search">
+                    <form action="" class="forms__inner">
+                        <div class="text-field"> 
+                            <input type="text" required name="Basic" min="3" max="15" placeholder="Placeholder"></div>
+                            <div class="text-field__icon castom-input">
+                                <input type="text" placeholder= "Placeholder">
+                              </div>
+                              <div class="text-field__search ">
+                                <input type="search" required name="right-search" min="3" max="15" placeholder="Placeholder">
+                                <i class="fas fa-search"></i></div>
+                            <div class="text-field__url">
+                            <input type="text" required name="search-url" min="3" max="15" placeholder="2dots.co"></div>
+                            <div class="text-field__disable">
+                                <!-- <input type="text" name="Disables" placeholder="Disabled"  disabled"> -->
+                                <input type="text" required name="Disabled" min="3" max="15" placeholder="Disabled" disabled>
+                            </div>
+                            <div class="text-field__error">
+                                <input type="text" name="Error" placeholder="Value" required min="3" max="15" pattern="[a-z]{1,15}">
+                            </div>
+                            <div class="text-field__active">
+                                <input type="text" name="actives" placeholder="Value" required min="3" max="15" ">
+                            </div>
+                    </form>
+                    <select class="chooses" ">
+                        <option value="Option" class="defoult">Choose</option>
+                        <option  class="chooses__focus">2</option>
+                        <option  class="chooses__error">3</option>
+                        <option  class="chooses__disable">4</option>
+                    </select>
+                    <div class="switch__wrapper">
+                      <div class="button-switch">
+                        <input type="checkbox" id="switch" class="switch" />
+                        <label for="switch" class="name-switch">Toggle</label>
+                        <span>Option</span>
+                      </div>
+
+                      <div class="button-switch">
+                        <input type="checkbox"  class="switch-light" id="switch-light"/>
+                        <label for="switch-light" class="switch-name">Toggle</label>
+                      </div>
+
+                      <div class="button-switch">
+                        <input type="checkbox" id="switch-sm" class="switch-small" />
+                        <label for="switch-sm" class="toggler">Toggle</label>
+
+                        <input type="checkbox" id="switch-slider" class="switch-small__light switch-small  " />
+                        <label for="switch-slider" class="toggler toggler__light">Toggle</label>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forms__column">
+              <h2 class="textarea__title">Textarea</h2>
+              <textarea name="base" id="base-t" cols="30" rows="10" placeholder="Placeholder"></textarea>
+              <h2 class="textarea__title">Textarea</h2>
+              <textarea name="error" class="textarea-field" id="error-t" cols="30" rows="10" value ="Value" placeholder="Value" ></textarea>
+              <div class="bar">
+                <div class="slider-styled" id="slider-round"></div>
+                <div  class="slider-styled" id="slider"></div>
+                <div class="slider-styled" id="tooltip"></div>
+                <div class="slider-styled" id="tooltip-double"></div>
+                <div class="slider-styled" id="tooltip-big"></div>
+              </div>
+            </div>
         </div>
     </section>
+    <section class="buttons">
+      <div class="container">
+        <h2 class="btn__title">Buttons Big</h2>
+        <div class="btn__wrapper">
+          <button class="btn btn__basic"><span>Download</span> </button>
+          <button class=" btn btn__disabled" disabled><span>Download</span></button>
+          <button class="btn btn__normal"><span>Download</span></button>
+          <button class="btn btn__active"><span>Download</span></button>
+          <button class="btn btn__basic">
+            <span>Download</span> 
+            <img class="btn__icon" src="../assets/icons/Download_big.png" alt="download icon">
+          </button>
+          <button class=" btn btn__disabled" disabled>
+            <span>Download</span>
+            <img class="btn__icon" src="../assets/icons/dw_gray.png" alt="download icon">
+          </button>
+          <button class="btn btn__normal">
+            <span>Download</span>
+            <img class="btn__icon" src="../assets/icons/dw_black.png" alt="download icon">
+          </button>
+          <button class="btn btn__active">
+            <span>Download</span>
+            <img class="btn__icon" src="../assets/icons/dw_blue.png" alt="download icon">
+          </button>
+          <button class="btn btn__basic ">
+            <img class="btn__icon" src="../assets/icons/Download_big.png" alt="download icon">
+            <span>Download</span>
+          </button>
+          <button class=" btn btn__disabled" disabled>
+            <img class="btn__icon" src="../assets/icons/dw_gray.png" alt="download icon">
+            <span>Download</span>
+          </button>
+          <button class="btn btn__normal">
+            <img class="btn__icon" src="../assets/icons/dw_black.png" alt="download icon">
+            <span>Download</span>
+          </button>
+          <button class="btn btn__active ">
+            <img class="btn__icon" src="../assets/icons/dw_blue.png" alt="download icon">
+            <span>Download</span>
+          </button>
+          
+        </div>
+        <h2 class="btn__title">Buttons Small</h2>
+        <div class="btn__wrapper btn__wrapper-small">
+          <button class="btn-sm btn__basic">
+            <span>Download</span>
+          </button>
+          <button class=" btn-sm btn__disabled" disabled>
+            <span>Download</span>
+          </button>
+          <button class="btn-sm btn__normal">
+            <span>Download</span>
+          </button>
+          <button class="btn-sm btn__active">
+            <span>Download</span>
+          </button>
+          <button class="btn-sm btn__basic">
+            <span>Download</span> 
+            <img class="btn__icon btn__icon-sm" src="../assets/icons/Download_big.png" alt="download icon">
+          </button>
+          <button class=" btn-sm btn__disabled" disabled>
+            <span>Download</span>
+            <img class="btn__icon btn__icon-sm" src="../assets/icons/dw_gray.png" alt="download icon">
+          </button>
+          <button class="btn-sm btn__normal">
+            <span>Download</span>
+            <img class="btn__icon btn__icon-sm" src="../assets/icons/dw_black.png" alt="download icon">
+          </button>
+          <button class="btn-sm btn__active">
+            <span>Download</span>
+            <img class="btn__icon btn__icon-sm" src="../assets/icons/dw_blue.png" alt="download icon">
+          </button>
+          <button class="btn-sm btn__error">
+            <span>Download</span> 
+            <img class="btn__icon btn__icon-sm" src="../assets/icons/Download_big.png" alt="download icon">
+          </button>
+          <button class=" btn-sm btn__disabled" disabled>
+            <span>Download</span>
+            <img class="btn__icon btn__icon-sm" src="../assets/icons/dw_gray.png" alt="download icon">
+          </button>
+          <button class="btn-sm btn__normal">
+            <span>Download</span>
+            <img class="btn__icon btn__icon-sm" src="../assets/icons/dw_black.png" alt="download icon">
+          </button>
+          <button class="btn-sm btn__active">
+            <span>Download</span>
+            <img class="btn__icon btn__icon-sm" src="../assets/icons/dw_blue.png" alt="download icon">
+          </button>
+        </div>
+        <div class="btn__inner">
+          <div class="btn__tags"></div>
+          <div class="btn__tabs">
+            <ul class="btn__items">
+              <li class="btn__item btn__item-search"></li>
+              <li class="btn__item btn__item-download">
+                <i class="fa-solid fa-briefcase"></i>
+              </li>
+              <li class="btn__item btn__item-holder"><i class="fa-solid fa-folder"></i></li>
+            </ul>
+            <ul class="btn__tab">
+              <li class="tab__focus"></li>
+              <li class="tab__normal"></li>
+            </ul>
+            <ul class="btn__sizes">
+              <li class="btn__size">
+                <span>S</span>
+              </li>
+              <li class="btn__size">
+                <span>M</span>
+              </li>
+              <li class="btn__size">
+                <span>L</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="progress">
+        <div class="container">
+           
+            
+            <div class="progress__block">
+              
+            </div> 
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/cea85e6afa.js" crossorigin="anonymous"></script>
+    <script src="./js/choices.min.js"></script>
+    <script type="text/javascript" src="//cdn.webix.com/site/webix.js"></script>
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>

@@ -1,0 +1,116 @@
+
+.btn__title{
+    padding: 90px 0 30px 0;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 36px;
+    color:$black_color;
+}
+.btn__wrapper{
+    display: grid;
+    max-width: 639px;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 24px;
+}
+.btn__wrapper-small{
+    max-width: 609px;
+}
+.btn{
+    text-align: center;
+    max-width: 144px;
+    border-radius: 5px;
+    padding: 14px 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18.15px;
+    border: none;
+    &:hover{
+        cursor: pointer;
+    }
+   
+}
+.btn__icon{
+    margin-left: 14px;
+    vertical-align:middle;
+    &:nth-last-child(n + 2) {
+        margin: 0 14px 0 0 ;
+    }
+}
+.btn__icon-sm{
+    width: 20px;
+    height: 20px;
+    &:nth-last-child(n + 2) {
+        margin: 0 12.5px 0 0 ;
+    }
+}
+
+.btn__basic{
+    color: $white_color;
+    background-color: $accent_color;
+}
+.btn__disabled{
+    background-color:rgba(224, 224, 224, 0.3);
+    color: #878787;
+}
+.btn__normal{
+    border: 1px solid #E0E0E0;
+    background-color: $white_color; 
+}
+.btn__active{
+    background-color: $accent_color;
+    color:$white_color;
+    border: 1px solid transparent;
+    
+    &:hover{
+        background-color: $white_color;
+        border: 1px solid $accent_color;
+        color: $accent_color;
+        
+    }
+}
+.btn-sm{
+    text-align: center;
+    max-width: 111px;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15.73px;
+    border: none;
+    transition: all ease 0.3s;
+    &:hover{
+        cursor: pointer;
+    }
+    &.btn__normal{
+        border: 1px solid #E0E0E0;
+    }
+}
+.btn__error{
+    background-color: $error_color;
+    color: $white_color;
+}
+
+//табы поиск/загрузка/папка
+.btn{
+    &__items{
+        max-width: 168px;
+        display: flex;
+        height: 48px;
+    }
+    &__item{
+        width: 56px;
+        padding: 12px 16px;
+      
+        &-search{
+            border-radius: 5px 0 0 5px;
+            background-color: $accent_color;
+            background-image: url('../../assets/icons/Search_light.png');
+            background-repeat: no-repeat;
+            background-position: 12px 50;
+            
+        }
+    }
+}
+
+ 
